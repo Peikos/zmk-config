@@ -93,7 +93,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
  &trans     &trans    &trans     &trans     &trans      &trans        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END  &trans   &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &trans         &trans     &trans       &trans
+                                  &trans     &trans     &kp DEL        &trans     &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -110,7 +110,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  '       │  ]       │  }       │  )       │          │   │    \     │  _       │  +       │  │       │   ?      │
  &trans     &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &trans         &trans     &trans       &trans
+                                  &trans     &trans     &trans      &kp BACKSPACE   &trans    &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
