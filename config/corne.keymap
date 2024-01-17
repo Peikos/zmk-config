@@ -20,6 +20,7 @@
 #define RIG 2
 #define LEF 3
 #define TRI 4
+#define HYP 5
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
@@ -30,7 +31,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <420>;
             quick-tap-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -59,7 +60,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z       │  X       │  C       │  V       │  B       │             │  N       │  M       │ , <      │ . >      │ BACKSPACE │
  &trans     &kp Z      &kp X      &kp C      &kp V      &kp B                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp BSPC &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &kp TAB
+                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &kp TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -128,6 +129,23 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //╰──────────┴──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans           &trans        &trans       &trans
         //                      ╰──────────┴───────────┴────────────╯   ╰────────────┴────────────┴──────────╯
+            >;
+        };
+
+        hypr_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮             ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  B       │             │  J       │  L       │  U       │  Y       │ BACKSPACE│
+ &trans     &kp LG(1)  &kp LG(2)  &kp LG(3)  &kp LG(4)  &kp LG(5)               &kp LG(6)  &kp LG(7)  &kp LG(8)  &kp LG(9)  &kp LG(0)   &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  G       │             │  M       │  N       │  E       │  I       │ O        │
+ &trans &kp LG(LC(0)) &kp LG(LC(1)) &kp LG(LC(2)) &kp RALT  &kp D                  &LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)   &kp LG(TAB) &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
+ &trans     &kp LG(Z)  &kp LG(C)  &kp LG(R)  &LG(V)     &kp LG(Q)          &kp LG(LS(H)) &kp LG(LS(J)) &kp LG(LS(K)) &kp LG(LS(L)) &kp LG(LS(TAB))  &trans
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
+                                  &trans    &trans    &trans           &ht RSHIFT SPACE &kp LG(EQUAL) &kp LG(MINUS)
+        //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
     };
