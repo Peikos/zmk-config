@@ -139,12 +139,12 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans    &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)              &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(N0)   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │             │  M       │  N       │  E       │  I       │ O        │
- &trans &kp LG(LC(0)) &kp LG(LC(1)) &kp LG(LC(2)) &kp RALT  &kp R               &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &kp LG(TAB) &trans
+ &trans &kp LG(LC(N0)) &kp LG(LC(N1)) &kp LG(LC(N2)) &kp RALT  &kp R               &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &kp LG(TAB) &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
  &trans   &kp LG(Z)  &kp LG(C) &kp LG(LS(R)) &kp LG(RCTRL)  &kp LG(Q)          &kp LG(LS(H)) &kp LG(LS(J)) &kp LG(LS(K)) &kp LG(LS(L)) &kp LG(LS(TAB))  &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans    &trans    &trans           &ht RSHIFT SPACE &kp LG(EQUAL) &kp LG(MINUS)
+                                  &trans    &trans    &trans           &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
