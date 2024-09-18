@@ -41,11 +41,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <RIG LFW>;
+            if-layers = <RIG LEF>;
             then-layer = <TRI>;
         };
-        tri_layer {
-            if-layers = <RIG LEF>;
+        tri_layer_win {
+            if-layers = <RIG LFW>;
             then-layer = <TRI>;
         };
     };
