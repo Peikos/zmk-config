@@ -12,6 +12,8 @@
 // Home row mods macro
 #define HRML(k2,k3,k4) &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3
+#define SS(k) LG(LS(k))
+#define CS(k) LG(LC(k))
 
 //#define DEF 0
 #define CMK 0
@@ -159,19 +161,23 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
         hypr_layer {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮             ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  B       │             │  J       │  L       │  U       │  Y       │ BACKSPACE│
- &trans    &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)              &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9) &kp LG(N0)   &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │             │  M       │  N       │  E       │  I       │ O        │
- &trans &kp LG(LC(N0)) &kp LG(LC(N1)) &kp LG(LC(N2)) &kp RALT  &kp R               &kp LG(M)  &kp LG(N)  &kp LG(E)  &kp LG(I)  &kp LG(TAB) &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
- &trans   &kp LG(X)  &kp LG(C) &kp LG(LS(R)) &kp LG(RCTRL)  &kp LG(ENTER)          &kp LG(LS(M)) &kp LG(LS(N)) &kp LG(LS(E)) &kp LG(LS(I)) &kp LG(LS(TAB))  &trans
-        //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans    &trans    &trans           &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
-        //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
+        //╭────────────┬────────────┬────────────┬────────────┬────────────╮             ╭────────────┬────────────┬────────────┬────────────┬────────────╮
+        //│  Q         │  W         │  F         │  P         │  B         │             │  J         │  L         │  U         │  Y         │ BACKSPACE  │
+ &trans      &kp LG(N1)  &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                 &kp LG(N6)   &kp LG(N7)   &kp LG(N8)   &kp LG(N9)   &kp LG(N0)    &trans
+        //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
+        //│  A         │  R         │  S         │  T         │  G         │             │  M         │  N         │  E         │  I         │ O          │
+ &trans &kp CS(N0)       &kp CS(N1)   &kp CS(N2)   &kp LG(T)    &kp LG(R)                  &kp LG(M)    &kp LG(N)    &kp LG(E)    &kp LG(I)    &kp LG(TAB)   &trans
+        //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
+        //│  Z         │  X         │  C         │  D         │  V         │             │  K         │  H         │ , <        │ . >        │ ENTER      │
+ &trans     &kp LG(X)    &kp LG(C)    &kp SS(R)    &kp SS(T)    &kp LG(ENTER)              &kp SS(M)    &kp SS(M)    &kp SS(e)    &kp SS(I)    &kp SS(TAB)   &trans
+        //╰────────────┴────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┴────────────╯
+                                  &trans    &trans    &trans                             &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
+        //                          ╰────────────┴────────────┴────────────╯             ╰────────────┴────────────┴────────────╯
             >; // LG(RCTRL) =? Naar muis layer?
+            // symbol layer?
+            // combining diacritics?
+
+            // LG(RCTRL) en RALT eraf
         };
     };
 };
