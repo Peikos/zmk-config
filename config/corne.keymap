@@ -23,6 +23,7 @@
 #define RTW 4
 #define TRI 5
 #define HYP 6
+#define XTR 7
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
@@ -34,7 +35,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <420>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <50>; // Down from 150, test how this goes
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -67,7 +68,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
  &trans     &kp Z      &kp X      &kp C      &kp D      &kp V                    &kp K      &kp H      &kp COMMA  &kp DOT    &kp ENTER  &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &kp TAB
+                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -85,7 +86,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z       │  X       │  C       │  V       │  B       │             │  N       │  M       │ , <      │ . >      │ ENTER    │
  &trans     &kp Z      &kp X      &kp C      &kp V      &kp B                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &lt HYP ESC &lt RTW SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &kp TAB
+                                  &lt HYP ESC &lt RTW SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -97,11 +98,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
  &trans     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0 &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │ PrintSc  │  INSERT  │          |   |          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
- &trans     &trans    &trans     &kp PSCRN  &kp INS     &trans          &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans &trans
+        //│          │          │          │          │          │   │          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
+ &trans     &trans    &kp LARW   &kp DARW  &kp UARW    &kp RARW       &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
- &trans     &trans    &trans     &trans     &trans      &trans        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END  &trans   &trans
+        //│          │          │ PrintSc  │   INSERT │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
+ &trans     &trans    &trans     &kp PSCRN   &kp INS    &trans        &kp HOME   &kp PG_DN  &kp PG_UP  &kp END  &trans   &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &kp DEL        &trans     &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -179,5 +180,24 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
             // LG(RCTRL) en RALT eraf
         };
+
+        extra_layer {  // movement keys on right hand triggered by right thumb
+                       // rest of space for symbols / diacritics
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │ RESERVE  │ FOR      │ MOUSE    │ MOVEMENT │ KEYS     │
+ &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &trans      &trans      &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans       &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &trans      &trans      &trans
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+                                  &trans     &trans     &trans         &trans     &trans       &trans
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+            >;
+        };
+
     };
 };
