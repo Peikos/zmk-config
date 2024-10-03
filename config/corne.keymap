@@ -102,7 +102,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &kp DOT   &kp LARW   &kp UARW  &kp DARW    &kp RARW       &kp LARW   &kp DARW   &kp UARW   &kp RARW    &trans    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ PrintSc  │          │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │          │
- &trans    &kp COMMA  &trans    &kp PSCRN &kp LS(LC(TAB)) &LC(TAB)    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END     &kp INS   &trans
+ &trans    &kp COMMA  &trans   &kp PSCRN &kp LS(LC(TAB)) &kp LC(TAB)  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END     &kp INS   &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &kp BSPC   &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
