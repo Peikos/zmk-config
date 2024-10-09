@@ -167,10 +167,10 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans      &kp LG(N1)  &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                 &kp LG(N6)   &kp LG(N7)   &kp LG(N8)   &kp LG(N9)   &kp LG(N0)    &trans
         //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
         //│  A         │  R         │  S         │  T         │  G         │             │  M         │  N         │  E         │  I         │ O          │
- &trans &kp CS(N0)       &kp CS(N1)   &kp CS(N2)   &kp LG(T)    &kp LG(R)                  &kp LG(M)    &kp LG(N)    &kp LG(E)    &kp LG(I)    &kp LG(TAB)   &trans
+ &trans &kp CS(N0)       &kp CS(N1)   &kp CS(N2)   &kp LG(T)    &kp LG(R)                  &kp LG(M)    &kp LG(N)    &kp LG(E)    &kp LG(I)    &kp SS(R)   &trans
         //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
         //│  Z         │  X         │  C         │  D         │  V         │             │  K         │  H         │ , <        │ . >        │ ENTER      │
- &trans     &kp LG(X)    &kp LG(C)    &kp SS(R)    &kp SS(T)    &kp LG(ENTER)              &kp SS(M)    &kp SS(M)    &kp SS(E)    &kp SS(I)    &kp SS(TAB)   &trans
+ &trans     &kp LG(X)    &kp LG(C)    &kp SS(T)    &kp SS(TAB)  &kp LG(TAB)                &kp SS(M)    &kp SS(N)    &kp SS(E)    &kp SS(I)    &kp LG(ENTER)                &trans
         //╰────────────┴────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┴────────────╯
                                   &trans    &trans    &trans                             &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
         //                          ╰────────────┴────────────┴────────────╯             ╰────────────┴────────────┴────────────╯
