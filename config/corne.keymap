@@ -203,7 +203,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z         │  X         │  C         │  D         │  V         │             │  K         │  H         │ , <        │ . >        │ ENTER      │
  &trans     &kp LG(X)    &kp LG(C)    &kp SS(T)    &kp SS(TAB)  &kp LG(TAB)                &kp SS(M)    &kp SS(N)    &kp SS(E)    &kp SS(I)    &kp LG(ENTER)                &trans
         //╰────────────┴────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┴────────────╯
-                                  &trans    &trans    &trans                             &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
+                                       &trans    &trans         &bootloader                &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
         //                          ╰────────────┴────────────┴────────────╯             ╰────────────┴────────────┴────────────╯
             >; // LG(RCTRL) =? Naar muis layer?
             // symbol layer?
