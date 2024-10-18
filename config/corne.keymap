@@ -40,12 +40,35 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        td: tap_dance {
-            label = "single_double_tap";
+        td1: tap_dance1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp N1>, <&kp N6>;
+        };
+        td2: tap_dance2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N2>, <&kp N7>;
+        };
+        td3: tap_dance3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N3>, <&kp N8>;
+        };
+        td4: tap_dance4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N4>, <&kp N9>;
+        };
+        td5: tap_dance5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N5>, <&kp N0>;
         };
     };
 
