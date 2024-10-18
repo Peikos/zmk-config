@@ -43,6 +43,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         td: tap_dance {
             label = "single_double_tap";
             compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
