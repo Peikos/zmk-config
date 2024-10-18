@@ -225,7 +225,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│          │          │          │          │          │   │          │          │          │          │          │
  &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &trans      &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &trans         &trans     &trans       &trans
+                                  &trans     &trans     &trans       &bootloader &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
