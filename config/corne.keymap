@@ -235,15 +235,15 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │ UP       │          │          │          │   │          │          │          │          │          │
- &trans     &kp Q      &kp W      &kp E      &kp R      &kp T          &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &kp Q      &kp W      &kp E      &kp R      &kp TAB        &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEFT     │ DOWN     │          │ RIGHT    │          │   │          │          │          │          │          │
- &trans     &kp A      &kp S      &kp D      &kp F      &kp G          &trans    &trans     &trans    &trans      &trans      &trans
+        //│ LEFT     │ DOWN     │ RIGHT    │          │          │   │          │          │          │          │          │
+ &trans     &kp A      &kp S      &kp D      &kp F      &kp ESC        &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 1/6      │ 2/7      │ 3/8      │ 4/9      │ 5/0      │   │          │          │          │          │          │
  &trans     &td1       &td2       &td3       &td4       &td5           &trans    &trans     &trans    &trans      &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp ESC    &kp TAB    &kp SPACE     &trans     &trans       &trans
+                                  &kp LCTRL &kp LSHIFT &kp SPACE     &trans     &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
