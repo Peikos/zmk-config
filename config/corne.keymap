@@ -70,6 +70,12 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             tapping-term-ms = <200>;
             bindings = <&kp N5>, <&kp N0>;
         };
+        tdet: tap_dance_tab_esc {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ESC>, <&kp TAB>;
+        };
     };
 
     conditional_layers {
@@ -203,7 +209,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z         │  X         │  C         │  D         │  V         │             │  K         │  H         │ , <        │ . >        │ ENTER      │
  &trans     &kp LG(X)    &kp LG(C)    &kp SS(T)    &kp SS(TAB)  &kp LG(TAB)                &kp SS(M)    &kp SS(N)    &kp SS(E)    &kp SS(I)    &kp LG(ENTER)                &trans
         //╰────────────┴────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┴────────────╯
-                                       &trans    &trans         &bootloader                &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
+                                       &trans    &trans         &kp LG(SPACE)                &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
         //                          ╰────────────┴────────────┴────────────╯             ╰────────────┴────────────┴────────────╯
             >; // LG(RCTRL) =? Naar muis layer?
             // symbol layer?
@@ -235,15 +241,15 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │ UP       │          │          │          │   │          │          │          │          │          │
- &trans     &kp Q      &kp W      &kp E      &kp R      &kp TAB        &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &kp Q      &kp W      &kp E      &kp R      &kp T        &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT     │ DOWN     │ RIGHT    │          │          │   │          │          │          │          │          │
- &trans     &kp A      &kp S      &kp D      &kp F      &kp ESC        &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &kp A      &kp S      &kp D      &kp F      &tdet        &kp LARW  &kp DARW   &kp UARW  &kp RARW    &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 1/6      │ 2/7      │ 3/8      │ 4/9      │ 5/0      │   │          │          │          │          │          │
  &trans     &td1       &td2       &td3       &td4       &td5           &trans    &trans     &trans    &trans      &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp LCTRL &kp LSHIFT &kp SPACE     &trans     &trans       &trans
+                                  &kp LCTRL &kp LSHIFT &kp SPACE     &kp ENTER     &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
