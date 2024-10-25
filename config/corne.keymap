@@ -247,7 +247,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &kp A      &kp S      &kp D      &kp F      &tdet        &kp LARW  &kp DARW   &kp UARW  &kp RARW    &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 1/6      │ 2/7      │ 3/8      │ 4/9      │ 5/0      │   │          │          │          │          │          │
- &trans     &td1       &td2       &td3       &td4       &td5           &trans    &trans     &trans    &trans      &tog GAM      &trans
+ &trans     &td5       &td4       &td3       &td2       &td1           &trans    &trans     &trans    &trans      &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &kp LCTRL &kp LSHIFT &kp SPACE     &kp ENTER     &trans       &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
