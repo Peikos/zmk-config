@@ -230,7 +230,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &TOG DKT   &tog GAM      &trans
+ &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &tog DKT   &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans       &bootloader &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -265,7 +265,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &trans     &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &kp R      &trans     &trans     &trans     &kp 0          &trans     &trans     &trans      &trans     &TOG DKT    &trans
+ &trans     &kp R      &trans     &trans     &trans     &kp 0          &trans     &trans     &trans      &trans     &tog DKT    &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &kp TILDE  &kp D      &kp SPACE      &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
