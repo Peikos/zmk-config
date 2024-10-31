@@ -25,6 +25,7 @@
 #define HYP 6
 #define XTR 7
 #define GAM 8
+#define DKT 8
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
@@ -123,7 +124,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z       │  X       │  C       │  V       │  B       │             │  N       │  M       │ , <      │ . >      │ ENTER    │
  &trans     &kp Z      &kp X      &kp C      &kp V      &kp B                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER  &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &lt HYP ESC &lt RTW SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
+                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RTW SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -229,7 +230,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &trans      &tog GAM      &trans
+ &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &TOG DKT   &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans       &bootloader &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -250,6 +251,23 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &td5       &td4       &td3       &td2       &td1           &trans    &trans     &trans    &trans      &tog GAM      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &kp LCTRL &kp LSHIFT &kp SPACE     &kp ENTER     &trans       &trans
+        //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
+            >;
+        };
+
+        darktable_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &ht LG(1)  &ht LG(2)  &ht LG(3)  &ht LG(4)  &ht LG(5)      &trans     &trans     &trans     &trans     &trans      &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &trans     &trans     &trans     &trans     &trans      &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &kp R      &trans     &trans     &trans     &kp 0          &trans     &trans     &trans      &trans     &TOG DKT    &trans
+        //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
+                                  &kp TILDE  &kp D      &kp SPACE      &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
