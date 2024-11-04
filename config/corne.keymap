@@ -142,7 +142,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│          │          │ PrintSc  │          │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │          │
  &trans    &kp COMMA  &trans   &kp PSCRN &kp LS(LC(TAB)) &kp LC(TAB)  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END     &kp INS   &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &trans         &kp BSPC   &trans       &trans
+                                  &trans     &trans     &trans         &trans     &trans       &kp DEL
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -159,7 +159,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  '       │  ]       │  }       │  )       │ `        │   │    \     │  _       │  +       │  │       │   ?      │
  &trans     &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR  &kp GRAVE      &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &kp DEL        &trans      &trans    &kp ENTER
+                                  &trans     &trans     &trans         &trans      &trans    &kp ENTER
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -176,7 +176,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  '       │  ]       │  }       │  )       │ `        │   │    \     │  _       │  +       │  │       │   ?      │
  &trans     &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR  &kp GRAVE      &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &kp DEL        &trans      &trans    &kp ENTER
+                                  &trans     &trans     &trans         &trans      &trans    &kp ENTER
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
