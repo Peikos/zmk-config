@@ -259,7 +259,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &kp LG(1)  &kp LG(2)  &kp LG(3)  &kp LG(4)  &kp LG(5)      &trans     &trans     &trans     &trans     &trans      &trans
+ &trans     &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)     &trans     &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
  &trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &trans     &trans     &trans     &trans     &trans      &trans
