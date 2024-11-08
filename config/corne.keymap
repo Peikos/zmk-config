@@ -262,7 +262,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &kp LG(1)  &kp LG(2)  &kp LG(3)  &kp LG(4)  &kp LG(5)      &trans     &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &trans     &trans     &trans     &trans     &trans      &trans
+ &trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &trans     &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
  &trans     &kp R      &trans     &trans     &trans     &kp 0          &trans     &trans     &trans      &trans     &tog DKT    &trans
