@@ -25,7 +25,7 @@
 #define HYP 6
 #define XTR 7
 #define GAM 8
-#define DKT 8
+#define DKT 9
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
