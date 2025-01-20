@@ -35,49 +35,49 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N1 &kp N0 &kp ENTER>
+                = <&macro_tap &kp N1 &kp N0 &kp TAB>
                 ;
         };
         g8: g8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N8 &kp ENTER>
+                = <&macro_tap &kp N8 &kp TAB>
                 ;
         };
         g65: g65 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N6 &kp DOT &kp N5 &kp ENTER>
+                = <&macro_tap &kp N6 &kp DOT &kp N5 &kp TAB>
                 ;
         };
         g55: g55 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N5 &kp DOT &kp N5 &kp ENTER>
+                = <&macro_tap &kp N5 &kp DOT &kp N5 &kp TAB>
                 ;
         };
         g4: g4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N4 &kp ENTER>
+                = <&macro_tap &kp N4 &kp TAB>
                 ;
         };
         g2: g2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N2 &kp ENTER>
+                = <&macro_tap &kp N2 &kp TAB>
                 ;
         };
         g0: g0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp N0 &kp ENTER>
+                = <&macro_tap &kp N0 &kp TAB>
                 ;
         };
     };
@@ -330,7 +330,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │ UP       │          │          │          │   │          │          │          │          │          │
- &trans     &trans     &kp UARW   &trans     &trans     &g10         &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &kp PG_UP  &kp UARW   &kp PG_DN  &trans     &g10         &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT     │ DOWN     │ RIGHT    │          │          │   │          │          │          │          │          │
  &trans     &kp LARW   &kp DARW  &kp RARW   &trans     &g8          &trans    &trans     &trans    &trans      &trans      &trans
