@@ -338,7 +338,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│          │          │          │          │          │   │          │          │          │          │          │
  &trans     &g0        &g2        &g4        &g55       &g65         &trans    &trans     &trans    &trans      &tog GRD      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp LG(M) &kp LG(I)  &kp ENTER       &trans    &trans     &trans
+                                  &kp LG(M) &kp LG(I)  &kp TAB       &trans    &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
