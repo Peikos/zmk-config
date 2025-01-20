@@ -73,7 +73,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
                 = <&macro_tap &kp N2 &kp ENTER>
                 ;
         };
-        g0: 10 {
+        g0: g0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -330,10 +330,10 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │ UP       │          │          │          │   │          │          │          │          │          │
- &trans     &trans     &kp UARW   &trans     &trans     &g10       &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &trans     &kp UARW   &trans     &trans     &g10         &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LEFT     │ DOWN     │ RIGHT    │          │          │   │          │          │          │          │          │
- &trans     &kp LARW   &kp DARWW  &kp RARW   &trans     &g8       &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &kp LARW   &kp DARW  &kp RARW   &trans     &g8          &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
  &trans     &g0        &g2        &g4        &g55       &g65         &trans    &trans     &trans    &trans      &tog GRD      &trans
