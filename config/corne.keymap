@@ -278,13 +278,13 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │ RESERVE  │ FOR      │ MOUSE    │ MOVEMENT │ KEYS     │
- &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &trans    &trans      &trans      &trans
+ &trans     &trans    &trans     &trans    &trans      &trans        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT      &mkp MB1      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &trans       &trans
+ &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &mkp MB2       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &trans    &trans     &trans    &trans      &trans          &trans    &trans     &tog GRD   &tog DKT   &tog GAM      &trans
+ &trans    &trans     &trans    &tog GRD   &tog DKT   &tog GAM      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT      &mkp MB3      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans       &bootloader &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
