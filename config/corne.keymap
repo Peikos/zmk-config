@@ -27,7 +27,7 @@
 #define XTR 7
 #define GAM 8
 #define DKT 9
-#define GRD 10
+#define HEX 10
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 / {
@@ -159,7 +159,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans    HRML(A,         R,         S,         T)     &kp G                    &kp M      HRMR(N,        E,           I,       O)     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
- &trans     &kp Z      &kp X      &kp C      &kp D      &kp V                    &kp K      &kp H      &kp COMMA  &kp DOT    &kp ENTER  &trans
+ &trans     &kp Z      &kp X      &kp C      &kp D      &kp V                    &kp K      &kp H      &kp COMMA  &kp DOT    &lt HEX ENTER  &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
@@ -285,7 +285,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  &trans     &trans    &trans     &trans    &trans      &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW  &mkp MB2       &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans    &trans     &trans    &tog GRD   &tog DKT   &tog GAM      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT      &mkp MB3      &trans
+ &trans    &trans     &trans     &trans     &tog DKT   &tog GAM      &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT      &mkp MB3      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans       &bootloader &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -327,19 +327,19 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             >;
         };
 
-        grade_layer {
+        hex_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │ UP       │          │          │          │   │          │          │          │          │          │
- &trans     &kp PG_UP  &kp UARW   &kp PG_DN  &trans     &g10         &trans    &trans     &trans    &trans      &trans      &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEFT     │ DOWN     │ RIGHT    │          │          │   │          │          │          │          │          │
- &trans     &kp LARW   &kp DARW  &kp RARW   &trans     &g8          &trans    &trans     &trans    &trans      &trans      &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &trans    &trans     &trans    &trans      &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
- &trans     &g0        &g2        &g4        &g55       &g65         &trans    &trans     &trans    &trans      &tog GRD      &trans
+ &trans     &kp N6     &kp N7     &kp N8     &kp N9     &kp A          &trans    &trans     &trans    &trans      &trans      &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+ &trans     &kp B      &kp C      &kp D      &kp E      &kp F          &trans    &trans     &trans    &trans      &trans      &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp LG(M) &kp LG(I)  &kp TAB       &trans    &trans     &trans
+                                  &kp HASH   &kp N0     &kp SPACE      &trans    &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
