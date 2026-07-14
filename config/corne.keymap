@@ -23,7 +23,7 @@
 #define RIG 3
 #define RTW 4
 #define TRI 5
-#define HYP 6
+#define NIR 6
 #define XTR 7
 #define GAM 8
 #define DKT 9
@@ -153,15 +153,15 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮             ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │             │  J       │  L       │  U       │  Y       │ BACKSPACE│
- &trans     &kp Q      &kp W      &kp F      &kp P      &kp B                    &kp J      &kp L      &kp U      &kp Y      &kp BSPC   &trans
+ &kp PAGE_UP     &kp Q      &kp W      &kp F      &kp P      &kp B                    &kp J      &kp L      &kp U      &kp Y      &kp BSPC   &kp DELETE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │             │  M       │  N       │  E       │  I       │ O        │
- &trans    HRML(A,         R,         S,         T)     &kp G                    &kp M      HRMR(N,        E,           I,       O)     &trans
+ &ESC    HRML(A,         R,         S,         T)     &kp G                    &kp M      HRMR(N,        E,           I,       O)     &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │             │  K       │  H       │ , <      │ . >      │ ENTER    │
- &trans     &kp Z      &kp X      &kp C      &kp D      &kp V                    &kp K      &kp H      &kp COMMA  &kp DOT    &lt HEX ENTER  &trans
+ &kp PAGE_DOWN     &kp Z      &kp X      &kp C      &kp D      &kp V                    &kp K      &kp H      &kp COMMA  &kp DOT    &lt HEX ENTER  &kp K_CONTEXT_MENU
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
+                                  &lt NIR ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RIG SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -179,7 +179,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         //│  Z       │  X       │  C       │  V       │  B       │             │  N       │  M       │ , <      │ . >      │ ENTER    │
  &trans     &kp Z      &kp X      &kp C      &kp V      &kp B                    &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER  &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤             ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &lt HYP ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RTW SPACE &lt XTR TAB
+                                  &lt NIR ESC &lt LEF SPACE &ht LSHIFT SPACE   &ht RSHIFT SPACE &lt RTW SPACE &lt XTR TAB
         //                      ╰──────────┴──────────┴──────────╯             ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -188,14 +188,14 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
- &trans     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0   &trans
+//│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
+&kp K_VOL_UP     &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
- &trans      &kp DOT  &kp LARW   &kp UARW  &kp DARW    &kp RARW       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp COMMA  &trans
+ &kp K_VOL_DOWN      &kp DOT  &kp LARW   &kp UARW  &kp DARW    &kp RARW       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp COMMA  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │          │
- &trans    &kp ENTER  &kp LC(V)  &kp LC(C) &kp LS(LC(TAB)) &kp LC(TAB) &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS    &trans
+ &kp K_PP    &kp ENTER  &kp LC(V)  &kp LC(C) &kp LS(LC(TAB)) &kp LC(TAB) &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp INS    &trans
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &kp DEL   &trans     &trans         &trans     &trans     &kp TAB
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -253,26 +253,47 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             >;
         };
 
-        hypr_layer {
+        niri_layer {
             bindings = <
-        //╭────────────┬────────────┬────────────┬────────────┬────────────╮             ╭────────────┬────────────┬────────────┬────────────┬────────────╮
-        //│  Q         │  W         │  F         │  P         │  B         │             │  J         │  L         │  U         │  Y         │ BACKSPACE  │
- &trans      &kp LG(N1)  &kp LG(N2)   &kp LG(N3)   &kp LG(N4)   &kp LG(N5)                 &kp LG(N6)   &kp LG(N7)   &kp LG(N8)   &kp LG(N9)   &kp LG(N0)    &trans
-        //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
-        //│  A         │  R         │  S         │  T         │  G         │             │  M         │  N         │  E         │  I         │ O          │
- &trans &kp CS(N0)       &kp CS(N1)   &kp CS(N2)   &kp LG(T)    &kp LG(R)                  &kp LG(M)    &kp LG(N)    &kp LG(E)    &kp LG(I)    &kp SS(R)   &trans
-        //├────────────┼────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┼────────────┤
-        //│  Z         │  X         │  C         │  D         │  V         │             │  K         │  H         │ , <        │ . >        │ ENTER      │
- &trans     &kp LG(X)    &kp LG(C)    &kp SS(T)    &kp SS(TAB)  &kp LG(TAB)                &kp SS(M)    &kp SS(N)    &kp SS(E)    &kp SS(I)    &kp LG(ENTER)                &trans
-        //╰────────────┴────────────┼────────────┼────────────┼────────────┤             ├────────────┼────────────┼────────────┼────────────┴────────────╯
-                                       &trans    &trans         &kp LG(SPACE)                &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
-        //                          ╰────────────┴────────────┴────────────╯             ╰────────────┴────────────┴────────────╯
+       //╭───────────┬───────────┬───────────┬───────────┬───────────╮   ╭───────────┬───────────┬───────────┬───────────┬────────────╮
+       //│  Q        │  W        │  F        │  P        │  B        │   │  J        │  L        │  U        │  Y        │ BACKSPACE  │
+&trans     &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)      &kp LG(N6)  &kp LG(L)  &kp LG(U)  &kp LG(N9)  &kp LG(N0)   &trans
+       //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼────────────┤
+       //│  A        │  R        │  S        │  T        │  G        │   │  M        │  N        │  E        │  I        │ O          │
+&trans     &kp CS(N0)  &kp CS(N1)  &kp CS(N2)  &kp LG(T)   &kp LG(R)       &kp LG(M)   &kp LG(N)   &kp LG(E)   &kp LG(I)   &kp SS(R)    &trans
+       //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼────────────┤
+       //│  Z        │  X        │  C        │  D        │  V        │   │  K        │  H        │ , <       │ . >       │ ENTER      │
+&trans     &kp LG(X)   &kp LG(C)   &kp SS(T)  &kp SS(TAB) &kp LG(TAB)     &kp SS(M)   &kp SS(N)   &kp SS(E)   &kp SS(I)   &kp LG(ENTER) &trans
+       //╰───────────┴───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┴────────────╯
+                                  &trans       &trans     &kp LG(SPACE)   &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS)
+       //                        ╰───────────┴───────────┴───────────╯   ╰───────────┴───────────┴───────────╯
             >; // LG(RCTRL) =? Naar muis layer?
             // symbol layer?
             // combining diacritics?
 
             // LG(RCTRL) en RALT eraf
         };
+
+/*         hypr_layer { */
+/*             bindings = < */
+/*        //╭───────────┬───────────┬───────────┬───────────┬───────────╮   ╭───────────┬───────────┬───────────┬───────────┬────────────╮ */
+/*        //│  Q        │  W        │  F        │  P        │  B        │   │  J        │  L        │  U        │  Y        │ BACKSPACE  │ */
+/* &trans     &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)      &kp LG(N6)  &kp LG(L)  &kp LG(U)  &kp LG(N9)  &kp LG(N0)   &trans */
+/*        //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼────────────┤ */
+/*        //│  A        │  R        │  S        │  T        │  G        │   │  M        │  N        │  E        │  I        │ O          │ */
+/* &trans     &kp CS(N0)  &kp CS(N1)  &kp CS(N2)  &kp LG(T)   &kp LG(R)       &kp LG(M)   &kp LG(N)   &kp LG(E)   &kp LG(I)   &kp SS(R)    &trans */
+/*        //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼────────────┤ */
+/*        //│  Z        │  X        │  C        │  D        │  V        │   │  K        │  H        │ , <       │ . >       │ ENTER      │ */
+/* &trans     &kp LG(X)   &kp LG(C)   &kp SS(T)  &kp SS(TAB) &kp LG(TAB)     &kp SS(M)   &kp SS(N)   &kp SS(E)   &kp SS(I)   &kp LG(ENTER) &trans */
+/*        //╰───────────┴───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┴────────────╯ */
+/*                                   &trans       &trans     &kp LG(SPACE)   &ht RSHIFT LG(SPACE) &kp LG(EQUAL) &kp LG(MINUS) */
+/*        //                        ╰───────────┴───────────┴───────────╯   ╰───────────┴───────────┴───────────╯ */
+/*             >; // LG(RCTRL) =? Naar muis layer? */
+/*             // symbol layer? */
+/*             // combining diacritics? */
+/**/
+/*             // LG(RCTRL) en RALT eraf */
+/*         }; */
 
         extra_layer {  // movement keys on right hand triggered by right thumb
                        // rest of space for symbols / diacritics
